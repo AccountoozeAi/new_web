@@ -7,7 +7,18 @@ import { Toaster } from "@/components/ui/toaster"
 export const metadata: Metadata = {
   title: 'Accountooze',
   description: 'FINANCE MET BRILLIANCE',
+
+  
+icons: {
+  icon: [
+   {
+    url: "/images/logo.svg",
+    href: "/images/logo.svg",
+   },
+  ],
+ },
 };
+
 
 export default function RootLayout({
   children,
