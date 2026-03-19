@@ -65,7 +65,7 @@ export function ItAgencyStorySection() {
      {/* Right Side: Image */}
      <div className="w-full md:w-1/2 relative h-[300px] md:h-auto">
       <Image
-       src="/images/realestate.jpg" // તમારી પાસે જે ઘરની ઈમેજ હોય તેનો પાથ અહીં લખો
+       src="/Images/realestate.jpg" // તમારી પાસે જે ઘરની ઈમેજ હોય તેનો પાથ અહીં લખો
        alt="Real Estate Properties"
        fill
        className="object-cover"

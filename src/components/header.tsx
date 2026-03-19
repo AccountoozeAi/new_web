@@ -15,7 +15,7 @@ export function Header() {
           {/* Logo Image */}
           <div className="relative h-10 w-10">
             <Image
-              src="/images/logo.svg"
+              src="/Images/logo.svg"
               alt="Accountooz Logo"
               fill
               className="object-contain"

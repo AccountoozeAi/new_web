@@ -44,12 +44,12 @@ const features = [
 ];
 
 const softwareLogos = [
-  { name: 'MYOB', src: '/images/QuickBooks.png' },
-  { name: 'Buildium', src: '/images/new1.png' },
-  { name: 'Yardi', src: '/images/new2.png' },
-  { name: 'Quickbooks', src: '/images/new4.png' },
-  { name: 'Wave', src: '/images/new5.png' },
-  // { name: 'Xero', src: '/images/new6.png' },
+  { name: 'MYOB', src: '/Images/QuickBooks.png' },
+  { name: 'Buildium', src: '/Images/new1.png' },
+  { name: 'Yardi', src: '/Images/new2.png' },
+  { name: 'Quickbooks', src: '/Images/new4.png' },
+  { name: 'Wave', src: '/Images/new5.png' },
+  // { name: 'Xero', src: '/Images/new6.png' },
   
 ];
 

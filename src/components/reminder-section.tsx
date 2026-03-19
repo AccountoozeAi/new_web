@@ -13,21 +13,21 @@
 //     title1: "Bookkeeping Service",
 //     title2: "For Real Estate Business",
 //     description: "Hire a Team of CPAs who specializes in Bookkeeping and Accounting of Real Estate Industry",
-//     image: "/images/bro.avif", 
+//     image: "/Images/bro.avif", 
 //   },
 //   {
 //     id: 2,
 //     title1: "Commission & Rental Tracking",
 //     title2: "That Works as Hard as You Do",
 //     description: "From closings to payouts, we manage your financials while you focus on selling more homes and closing more deals.",
-//     image: "/images/grow.avif",
+//     image: "/Images/grow.avif",
 //   },
 //   {
 //     id: 3,
 //     title1: "Stay on Top of Every",
 //     title2: "Property's Profitability",
 //     description: "We handle rental income, expenses, and P&L reports for each unit — so you can grow your portfolio with clarity.",
-//     image: "/images/Realestate.avif",
+//     image: "/Images/Realestate.avif",
 //   }
 // ];
 
@@ -139,21 +139,21 @@
 //     title1: "Bookkeeping Service",
 //     title2: "For Real Estate Business",
 //     description: "Hire a Team of CPAs who specializes in Bookkeeping and Accounting of Real Estate Industry",
-//     image: "/images/bro.avif", // તમારા પ્રોજેક્ટ મુજબ પાથ બદલજો
+//     image: "/Images/bro.avif", // તમારા પ્રોજેક્ટ મુજબ પાથ બદલજો
 //   },
 //   {
 //     id: 2,
 //     title1: "Commission & Rental Tracking",
 //     title2: "That Works as Hard as You Do",
 //     description: "From closings to payouts, we manage your financials while you focus on selling more homes and closing more deals.",
-//     image: "/images/grow.avif",
+//     image: "/Images/grow.avif",
 //   },
 //   {
 //     id: 3,
 //     title1: "Stay on Top of Every",
 //     title2: "Property's Profitability",
 //     description: "We handle rental income, expenses, and P&L reports for each unit — so you can grow your portfolio with clarity.",
-//     image: "/images/Realestate.avif",
+//     image: "/Images/Realestate.avif",
 //   }
 // ];
 
@@ -263,14 +263,14 @@ const slides = [
     title1: "Bookkeeping Service",
     title2: "For Real Estate Business",
     description: "Hire a Team of CPAs who specializes in Bookkeeping and Accounting of Real Estate Industry",
-    image: "/images/bro.avif",
+    image: "/Images/bro.avif",
   },
   {
     id: 2,
     title1: "Commission & Rental Tracking",
     title2: "That Works as Hard as You Do",
     description: "From closings to payouts, we manage your financials while you focus on selling more homes and closing more deals.",
-    image: "/images/Outstaff.avif",
+    image: "/Images/Outstaff.avif",
     // imageClassName: "scale-110 md:scale-125"
   },
   {
@@ -278,7 +278,7 @@ const slides = [
     title1: "Stay on Top of Every",
     title2: "Property's Profitability",
     description: "We handle rental income, expenses, and P&L reports for each unit — so you can grow your portfolio with clarity.",
-    image: "/images/Realestate.avif",
+    image: "/Images/Realestate.avif",
   }
 ];
 
