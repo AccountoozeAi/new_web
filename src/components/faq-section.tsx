@@ -42,7 +42,7 @@ const faqItems = [
 
 export function FaqSection() {
     return (
-        <section className="container py-20 md:py-32 relative overflow-hidden">
+        <section className="container py-20 md:py-15 relative overflow-hidden">
             {/* Background Decorative Blur */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -z-10 h-[400px] w-[800px] bg-primary/5 blur-[120px] rounded-full" />
             

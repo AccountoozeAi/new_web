@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import { 
-  ShieldCheck, 
-  Zap, 
-  TrendingUp, 
-  Percent, 
-  BadgeIndianRupee, 
-  Star 
+import {
+  ShieldCheck,
+  Zap,
+  TrendingUp,
+  Percent,
+  BadgeIndianRupee,
+  Star
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -44,19 +44,20 @@ const features = [
 ];
 
 const softwareLogos = [
+  { name: 'MYOB', src: '/images/QuickBooks.png' },
   { name: 'Buildium', src: '/images/new1.png' },
   { name: 'Yardi', src: '/images/new2.png' },
   { name: 'Quickbooks', src: '/images/new4.png' },
   { name: 'Wave', src: '/images/new5.png' },
-  { name: 'Xero', src: '/images/new6.png' },
-  { name: 'MYOB', src: '/images/QuickBooks.png' },
+  // { name: 'Xero', src: '/images/new6.png' },
+  
 ];
 
 export function RealStoriesSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-19 bg-white">
       <div className="container mx-auto max-w-6xl px-4">
-        
+
         {/* --- Header --- */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-black mb-6">
@@ -64,7 +65,7 @@ export function RealStoriesSection() {
           </h2>
           <p className="text-gray-600 font-medium leading-relaxed">
             At Accountooze, we don&apos;t just offer bookkeeping — we offer a smarter way to run your business.
-            From day one, you get access to handpicked professionals, transparent pricing, 
+            From day one, you get access to handpicked professionals, transparent pricing,
             and a system that works as an extension of your own business.
           </p>
         </div>
@@ -72,8 +73,8 @@ export function RealStoriesSection() {
         {/* --- Features Grid with Spin & Hover Animation --- */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
           {features.map((feature, idx) => (
-            <div 
-              key={idx} 
+            <div
+              key={idx}
               className={cn(
                 "group p-8 rounded-[1.5rem] bg-[#F8F9FA] border border-transparent transition-all duration-500 ease-out",
                 "hover:bg-[#FF4500] hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(255,69,0,0.3)]"
@@ -108,19 +109,19 @@ export function RealStoriesSection() {
           <h2 className="text-3xl md:text-4xl font-black mb-12">
             Softwares <span className="text-[#FF4500]">We Use</span>
           </h2>
-          
+
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
             {softwareLogos.map((logo, i) => (
               <div key={i} className="relative transition-all duration-500 grayscale hover:grayscale-0 hover:scale-110">
                 <div key={i} className="relative transition-all duration-500 grayscale hover:grayscale-0 hover:scale-110">
-  <Image
-    src={logo.src}
-    alt={logo.name}
-    width={140}
-    height={60}
-    className="object-contain"
-  />
-</div>
+                  <Image
+                    src={logo.src}
+                    alt={logo.name}
+                    width={140}
+                    height={60}
+                    className="object-contain"
+                  />
+                </div>
               </div>
             ))}
           </div>

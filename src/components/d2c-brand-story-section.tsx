@@ -33,7 +33,7 @@ export function D2cBrandStorySection() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-19 bg-white">
       <div className="container mx-auto max-w-6xl px-4">
         {/* Main Card Container with your requested Border & Shadow Style */}
         <div className="rounded-[2.5rem] bg-[#F8F9FA] p-6 sm:p-10 md:p-14 border border-transparent hover:border-[#FF4500]/20 transition-all duration-300 hover:shadow-2xl relative overflow-hidden group/main">

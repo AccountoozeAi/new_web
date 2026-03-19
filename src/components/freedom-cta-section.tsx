@@ -6,7 +6,7 @@ import AttentionButton from "./button _animation/page";
 
 export function FreedomCtaSection() {
   return (
-    <section className="relative py-24 md:py-32 overflow-hidden">
+    <section className="relative py-24 md:py-20 overflow-hidden">
 
       {/* Background glow */}
       <div className="absolute inset-0 -z-10 bg-primary/5" />

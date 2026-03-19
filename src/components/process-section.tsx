@@ -84,7 +84,7 @@ const processSteps = [
 
 export function ProcessSection() {
   return (
-    <section className="w-full bg-[#fdfdfd] py-20 md:py-32 relative overflow-hidden">
+    <section className="w-full bg-[#fdfdfd] py-20 md:py-17 relative overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute top-0 right-0 -z-10 h-[500px] w-[500px] bg-primary/5 blur-[120px] rounded-full opacity-50" />
       <div className="absolute bottom-0 left-0 -z-10 h-[400px] w-[400px] bg-orange-200/20 blur-[100px] rounded-full opacity-50" />

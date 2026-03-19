@@ -37,7 +37,7 @@ export function EcommerceAggregatorStorySection() {
  ];
 
  return (
-  <section className="py-20 bg-white font-sans">
+  <section className="py-18 bg-white font-sans">
    <div className="container mx-auto max-w-6xl px-4">
     
     {/* Title */}

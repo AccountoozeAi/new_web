@@ -25,7 +25,7 @@ const features = [
 
 export function ItAgencyStorySection() {
  return (
-  <section className="py-16 bg-white px-4">
+  <section className="py-20 bg-white px-4">
    <div className="container mx-auto max-w-6xl">
     
     {/* --- Who We Help Section --- */}

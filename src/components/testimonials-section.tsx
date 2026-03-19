@@ -24,7 +24,7 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className="relative py-24 md:py-32">
+    <section className="relative py-15 md:py-15">
 
       {/* background glow */}
       {/* <div className="absolute inset-0 -z-10 bg-primary/5"></div> */}

@@ -9,7 +9,7 @@ export function StrategyCallSection() {
  ];
 
  return (
-  <section className="container py-16 md:py-24 relative overflow-hidden">
+  <section className="container py-16 md:py-15 relative overflow-hidden">
    {/* Background Decorative Elements */}
    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 h-[500px] w-[500px] bg-primary/5 blur-[120px] rounded-full" />
    

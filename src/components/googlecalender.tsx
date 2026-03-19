@@ -9,7 +9,7 @@ export default function BookingPage() {
         backgroundColor: "#f5f5f5"
       }}
     >
-      
+
       {/* Header */}
       <div
         style={{
@@ -18,7 +18,11 @@ export default function BookingPage() {
           padding: "16px 5%",
           fontSize: "clamp(18px, 2vw, 24px)",
           fontWeight: "600",
-          boxShadow: "0 2px 4px rgba(0,0,0,0.1)"
+          boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center"
         }}
       >
         BOOK INTRO MEETING
@@ -33,7 +37,7 @@ export default function BookingPage() {
           boxSizing: "border-box"
         }}
       >
-        
+
         {/* Responsive Calendar Container */}
         <div
           style={{
