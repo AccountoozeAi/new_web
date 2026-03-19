@@ -248,6 +248,182 @@
 // }
 
 
+// 'use client';
+
+// import { useState, useEffect, useCallback, useRef } from 'react';
+// import Image from 'next/image';
+// import { buttonVariants } from '@/components/ui/button';
+// import Link from 'next/link';
+// import { cn } from '@/lib/utils';
+// import { motion, AnimatePresence } from 'framer-motion';
+
+// const slides = [
+//   {
+//     id: 1,
+//     title1: "Bookkeeping Service",
+//     title2: "For Real Estate Business",
+//     description: "Hire a Team of CPAs who specializes in Bookkeeping and Accounting of Real Estate Industry",
+//     image: "/Images/bro.avif",
+//   },
+//   {
+//     id: 2,
+//     title1: "Commission & Rental Tracking",
+//     title2: "That Works as Hard as You Do",
+//     description: "From closings to payouts, we manage your financials while you focus on selling more homes and closing more deals.",
+//     image: "/Images/Outstaff.avif",
+//     // imageClassName: "scale-110 md:scale-125"
+//   },
+//   {
+//     id: 3,
+//     title1: "Stay on Top of Every",
+//     title2: "Property's Profitability",
+//     description: "We handle rental income, expenses, and P&L reports for each unit — so you can grow your portfolio with clarity.",
+//     image: "/Images/Realestate.avif",
+//   }
+// ];
+
+// export function ReminderSection() {
+//   const [currentSlide, setCurrentSlide] = useState(0);
+//   const isScrolling = useRef(false);
+
+//   const handleScroll = useCallback((e: any) => {
+//     if (isScrolling.current) return;
+//     if (Math.abs(e.deltaY) < 50) return;
+
+//     isScrolling.current = true;
+//     if (e.deltaY > 0) {
+//       setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+//     } else {
+//       setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+//     }
+//     setTimeout(() => { isScrolling.current = false; }, 1000);
+//   }, []);
+
+//   useEffect(() => {
+//     const section = document.getElementById('scroll-section');
+//     section?.addEventListener('wheel', handleScroll, { passive: false });
+//     return () => section?.removeEventListener('wheel', handleScroll);
+//   }, [handleScroll]);
+
+//   return (
+//     <section
+//       id="scroll-section"
+//       className="relative overflow-hidden bg-[#FCFCFD] pt-16 md:pt-19 pb-12 md:pb-19 flex items-start justify-center"
+//     >
+//       {/* Background Blurs */}
+//       <div className="absolute top-0 right-0 w-[40%] h-[40%] bg-orange-100/30 rounded-full blur-[120px] -z-10" />
+//       <div className="absolute bottom-0 left-0 w-[30%] h-[30%] bg-blue-50/40 rounded-full blur-[100px] -z-10" />
+
+//       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+//         <div className="max-w-7xl mx-auto">
+//           {/* Responsive Grid: Mobile pe Image upar (order-1), Text niche (order-2) */}
+//           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center text-center md:text-left">
+
+//             {/* Content Side */}
+//             <div className="order-2 md:order-1 flex flex-col justify-center">
+//               <AnimatePresence mode="wait">
+//                 <motion.div
+//                   key={currentSlide}
+//                   initial={{ opacity: 0, y: 10 }}
+//                   animate={{ opacity: 1, y: 0 }}
+//                   exit={{ opacity: 0, y: -10 }}
+//                   transition={{ duration: 0.4 }}
+//                   className="space-y-6 md:space-y-8"
+//                 >
+//                   <div className="space-y-4">
+//                     {/* <span className="inline-block px-4 py-1.5 rounded-full bg-orange-50 text-[#FF4500] text-[10px] md:text-xs font-bold uppercase tracking-widest border border-orange-100 shadow-sm">
+//                       Real Estate Solutions
+//                     </span> */}
+//                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-[#111827] leading-[1.1] md:max-w-[15ch]">
+//                       {slides[currentSlide].title1}
+//                       <br />
+//                       <span className="text-[#FF4500] inline-block mt-1">
+//                         {slides[currentSlide].title2}
+//                       </span>
+//                     </h2>
+//                     <p className="text-base md:text-lg lg:text-xl text-slate-600 max-w-xl mx-auto md:mx-0 leading-relaxed font-medium">
+//                       {slides[currentSlide].description}
+//                     </p>
+//                   </div>
+
+//                   {/* Buttons Container */}
+//                   <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center md:justify-start">
+//                     <Link
+//                       href="https://calendar.google.com/..."
+//                       className={cn(
+//                         buttonVariants({ size: 'lg' }),
+//                         'bg-[#FF4500] hover:bg-[#E63E00] text-white px-6 py-6 md:px-8 md:py-7 text-base md:text-lg font-bold rounded-xl shadow-lg transition-transform hover:-translate-y-1 active:scale-95'
+//                       )}
+//                     >
+//                       Book a Consultation
+//                     </Link>
+//                   </div>
+//                   {/* <Link
+//                       href="#Explore"
+//                       className={cn(
+//                         buttonVariants({ variant: 'outline', size: 'lg' }),
+//                         'border-slate-200 text-slate-700 bg-white px-6 py-6 md:px-8 md:py-7 text-base md:text-lg font-bold rounded-xl border-2 transition-all'
+//                       )}
+//                     >
+//                       Explore Plans
+//                     </Link> */}
+
+
+//                   {/* Progress Indicators */}
+//                   <div className="flex items-center gap-4 pt-6 justify-center md:justify-start">
+//                     <div className="flex gap-2">
+//                       {slides.map((_, index) => (
+//                         <button
+//                           key={index}
+//                           onClick={() => setCurrentSlide(index)}
+//                           className={cn(
+//                             "h-2 rounded-full transition-all duration-300",
+//                             currentSlide === index ? "w-10 bg-[#FF4500]" : "w-2 bg-slate-200"
+//                           )}
+//                         />
+//                       ))}
+//                     </div>
+//                   </div>
+//                 </motion.div>
+//               </AnimatePresence>
+//             </div>
+
+//             {/* Image Side */}
+//             <div className="order-1 md:order-2 flex justify-center items-center">
+//               <div className="relative w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] aspect-square flex items-center justify-center">
+//                 <AnimatePresence mode="wait">
+//                   <motion.div
+//                     key={currentSlide}
+//                     initial={{ opacity: 0, scale: 0.95 }}
+//                     animate={{ opacity: 1, scale: 1 }}
+//                     exit={{ opacity: 0, scale: 1.05 }}
+//                     transition={{ duration: 0.5 }}
+//                     className="relative w-full h-full"
+//                   >
+//                     <Image
+//                       src={slides[currentSlide].image}
+//                       alt="Service Illustration"
+//                       fill
+//                       className="object-contain drop-shadow-2xl"
+//                       priority
+//                       sizes="(max-width: 768px) 100vw, 50vw"
+//                     />
+                    
+//                   </motion.div>
+//                 </AnimatePresence>
+//               </div>
+//             </div>
+
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+
+
+
 'use client';
 
 import { useState, useEffect, useCallback, useRef } from 'react';
@@ -271,7 +447,6 @@ const slides = [
     title2: "That Works as Hard as You Do",
     description: "From closings to payouts, we manage your financials while you focus on selling more homes and closing more deals.",
     image: "/Images/Outstaff.avif",
-    // imageClassName: "scale-110 md:scale-125"
   },
   {
     id: 3,
@@ -284,31 +459,20 @@ const slides = [
 
 export function ReminderSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const isScrolling = useRef(false);
 
-  const handleScroll = useCallback((e: any) => {
-    if (isScrolling.current) return;
-    if (Math.abs(e.deltaY) < 50) return;
-
-    isScrolling.current = true;
-    if (e.deltaY > 0) {
+  // --- Auto-play logic (5 seconds) ---
+  useEffect(() => {
+    const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-    } else {
-      setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
-    }
-    setTimeout(() => { isScrolling.current = false; }, 1000);
+    }, 5000); // 5000ms = 5 seconds
+
+    return () => clearInterval(timer); // Cleanup timer on unmount
   }, []);
 
-  useEffect(() => {
-    const section = document.getElementById('scroll-section');
-    section?.addEventListener('wheel', handleScroll, { passive: false });
-    return () => section?.removeEventListener('wheel', handleScroll);
-  }, [handleScroll]);
-
   return (
-    <section
+     <section
       id="scroll-section"
-      className="relative overflow-hidden bg-[#FCFCFD] pt-16 md:pt-19 pb-12 md:pb-19 flex items-start justify-center"
+      className="relative overflow-hidden bg-[#FCFCFD] pt-15 md:pt-18 pb-12 md:pb-19 flex items-start justify-center"
     >
       {/* Background Blurs */}
       <div className="absolute top-0 right-0 w-[40%] h-[40%] bg-orange-100/30 rounded-full blur-[120px] -z-10" />
@@ -316,7 +480,6 @@ export function ReminderSection() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          {/* Responsive Grid: Mobile pe Image upar (order-1), Text niche (order-2) */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center text-center md:text-left">
 
             {/* Content Side */}
@@ -327,14 +490,11 @@ export function ReminderSection() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.4 }}
+                  transition={{ duration: 0.5 }}
                   className="space-y-6 md:space-y-8"
                 >
                   <div className="space-y-4">
-                    {/* <span className="inline-block px-4 py-1.5 rounded-full bg-orange-50 text-[#FF4500] text-[10px] md:text-xs font-bold uppercase tracking-widest border border-orange-100 shadow-sm">
-                      Real Estate Solutions
-                    </span> */}
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-[#111827] leading-[1.1] md:max-w-[15ch]">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-[#111827] leading-[1.1]">
                       {slides[currentSlide].title1}
                       <br />
                       <span className="text-[#FF4500] inline-block mt-1">
@@ -346,30 +506,19 @@ export function ReminderSection() {
                     </p>
                   </div>
 
-                  {/* Buttons Container */}
                   <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center md:justify-start">
                     <Link
-                      href="https://calendar.google.com/..."
+                       href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0czVvey0mCJa39b594OhprJIIBTdV2h18U9Q3_xzSugo1qfMzTCrmN3rorBREzUeNYGlxnZ7Gq?gv=true"
                       className={cn(
                         buttonVariants({ size: 'lg' }),
-                        'bg-[#FF4500] hover:bg-[#E63E00] text-white px-6 py-6 md:px-8 md:py-7 text-base md:text-lg font-bold rounded-xl shadow-lg transition-transform hover:-translate-y-1 active:scale-95'
+                        'bg-[#FF4500] hover:bg-[#E63E00] text-white px-8 py-7 text-lg font-bold rounded-xl shadow-lg transition-transform hover:-translate-y-1 active:scale-95'
                       )}
                     >
                       Book a Consultation
                     </Link>
                   </div>
-                  {/* <Link
-                      href="#Explore"
-                      className={cn(
-                        buttonVariants({ variant: 'outline', size: 'lg' }),
-                        'border-slate-200 text-slate-700 bg-white px-6 py-6 md:px-8 md:py-7 text-base md:text-lg font-bold rounded-xl border-2 transition-all'
-                      )}
-                    >
-                      Explore Plans
-                    </Link> */}
 
-
-                  {/* Progress Indicators */}
+                  {/* Progress Dots */}
                   <div className="flex items-center gap-4 pt-6 justify-center md:justify-start">
                     <div className="flex gap-2">
                       {slides.map((_, index) => (
@@ -390,7 +539,7 @@ export function ReminderSection() {
 
             {/* Image Side */}
             <div className="order-1 md:order-2 flex justify-center items-center">
-              <div className="relative w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] aspect-square flex items-center justify-center">
+              <div className="relative w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] aspect-square">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentSlide}
@@ -406,20 +555,7 @@ export function ReminderSection() {
                       fill
                       className="object-contain drop-shadow-2xl"
                       priority
-                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
-                    {/* <Image
-                      src={slides[currentSlide].image}
-                      alt="Service Illustration"
-                      fill
-                      // Yaha dynamic class add karein
-                      className={cn(
-                        "object-contain drop-shadow-2xl transition-transform duration-500",
-                        slides[currentSlide].imageClassName
-                      )}
-                      priority
-                      sizes="(max-width: 700px) 100vw, 50vw"
-                    /> */}
                   </motion.div>
                 </AnimatePresence>
               </div>

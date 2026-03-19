@@ -14,7 +14,7 @@ const issuesList = [
 
 export function BookingCtaSection() {
   return (
-    <section className="py-15 md:py-20">
+    <section className="py-12 md:py-17">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}

@@ -48,8 +48,8 @@ export function EcommerceAggregatorStorySection() {
      <div className="h-1.5 w-20 bg-[#FF4500] mx-auto rounded-full" />
     </div>
 
-    {/* Pricing Cards */}
-    <div className="grid md:grid-cols-3 gap-8 mb-16">
+    
+    {/* <div className="grid md:grid-cols-3 gap-8 mb-16">
      {pricingPlans.map((plan, i) => (
       <div 
        key={i} 
@@ -74,12 +74,10 @@ export function EcommerceAggregatorStorySection() {
         ))}
        </ul>
 
-       {/* <button className="w-full py-4 rounded-xl bg-gray-50 text-[#1a1a1a] font-black hover:bg-[#FF4500] hover:text-white transition-colors border border-gray-100">
-        Get Started
-       </button> */}
+       
       </div>
      ))}
-    </div>
+    </div> */}
 
     {/* Bottom Banner */}
     <div className="text-center space-y-4">

@@ -46,10 +46,11 @@ const features = [
 const softwareLogos = [
   { name: 'MYOB', src: '/Images/QuickBooks.png' },
   { name: 'Buildium', src: '/Images/new1.png' },
+  { name: 'Xero', src: '/Images/APP.png' },
   { name: 'Yardi', src: '/Images/new2.png' },
   { name: 'Quickbooks', src: '/Images/new4.png' },
   { name: 'Wave', src: '/Images/new5.png' },
-  // { name: 'Xero', src: '/Images/new6.png' },
+   
   
 ];
 

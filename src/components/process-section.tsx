@@ -84,16 +84,16 @@ const processSteps = [
 
 export function ProcessSection() {
   return (
-    <section className="w-full bg-[#fdfdfd] py-20 md:py-17 relative overflow-hidden">
+    <section className="w-full bg-[#fdfdfd] py-20 md:py-12 relative overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute top-0 right-0 -z-10 h-[500px] w-[500px] bg-primary/5 blur-[120px] rounded-full opacity-50" />
       <div className="absolute bottom-0 left-0 -z-10 h-[400px] w-[400px] bg-orange-200/20 blur-[100px] rounded-full opacity-50" />
 
       <div className="container mx-auto max-w-5xl px-6 relative z-10">
         <div className="mb-16 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.2em] mb-4 border border-primary/20">
+          {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.2em] mb-4 border border-primary/20">
             Our Workflow
-          </div>
+          </div> */}
           <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-slate-900 leading-tight">
             Our Process Of <span className="text-primary italic">Work</span>
           </h2>
