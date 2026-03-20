@@ -20,87 +20,57 @@ import { StrategyCallSection } from "@/components/strategy-call-section";
 import { FaqSection } from "@/components/faq-section";
 import BookingPage from "@/components/googlecalender";
 import ScrollReveal from "@/components/scroller/page";
-// import CalendarBooking from '@/components/googlecalender';
 
 export default async function Home() {
   return (
     <>
-    <ScrollReveal>
-      <HeroSection /> 
+      <ScrollReveal>
+        <HeroSection />
       </ScrollReveal>
       <ScrollReveal>
         <ReminderSection />
       </ScrollReveal>
-      
+
       <ScrollReveal>
         <ServicesSection />
       </ScrollReveal>
       <ScrollReveal>
-      <BookingCtaSection />
+        <BookingCtaSection />
       </ScrollReveal>
-      {/* <ScrollReveal>
-      <ImpactSection />
-      </ScrollReveal> */}
+
       <ScrollReveal>
-      <ProcessSection />
+        <ProcessSection />
       </ScrollReveal>
-      
-      {/* <div className="bg-secondary py-16 md:py-24">
-        <div className="container"> */}
-          {/* <div className="mb-12 text-center">
-            <h2 className="text-4xl font-bold tracking-tight">
-              Real Founder Stories
-            </h2>
-            <p className="mt-2 text-lg text-muted-foreground">
-              From chaos to clarity. See how we help businesses like yours.
-            </p>
-          </div> */}
-          {/* <div className="space-y-24"> */}
-            <ScrollReveal>
-            <RealStoriesSection />
-            </ScrollReveal>
-            <ScrollReveal>
-            <ItAgencyStorySection />
-            </ScrollReveal>
-            {/* <ScrollReveal>
-            {/* <StartupFounderStorySection /> */}
-            {/* </ScrollReveal> */}
-            {/* <ScrollReveal>
-            <CafeStorySection />
-            </ScrollReveal> */}
-            <ScrollReveal>
-            <D2cBrandStorySection />
-            </ScrollReveal>
-            {/* <ScrollReveal>
-            <WellnessBrandStorySection />
-            </ScrollReveal> */}
-            {/* <ScrollReveal>
-            <HomeDecorStorySection />
-            </ScrollReveal> */}
-            {/* <ScrollReveal>
-            <OrganicBrandStorySection />
-            </ScrollReveal> */}
-            <ScrollReveal>
-            <EcommerceAggregatorStorySection />
-            </ScrollReveal>
-          {/* </div>
-        </div>
-      </div> */}
-      {/* <FounderChatsSection /> */}
+
       <ScrollReveal>
-      <StrategyCallSection />
+        <RealStoriesSection />
       </ScrollReveal>
       <ScrollReveal>
-      <TestimonialsSection />
+        <ItAgencyStorySection />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <D2cBrandStorySection />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <EcommerceAggregatorStorySection />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <StrategyCallSection />
       </ScrollReveal>
       <ScrollReveal>
-      <FaqSection />
+        <TestimonialsSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <FaqSection />
       </ScrollReveal>
       <ScrollReveal>
         <BookingPage />
       </ScrollReveal>
       <ScrollReveal>
-      <FreedomCtaSection />
+        <FreedomCtaSection />
       </ScrollReveal>
     </>
   );

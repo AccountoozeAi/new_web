@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/lp",
+      "destination": "https://new-web-xi-ten.vercel.app"
+    },
+    {
+      "source": "/lp/:path*",
+      "destination": "https://new-web-xi-ten.vercel.app/:path*"
+    }
+  ]
+}
