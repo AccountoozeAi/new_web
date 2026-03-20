@@ -12,6 +12,21 @@ const nextConfig: NextConfig = {
   },
   images: {
     remotePatterns: [
+
+      {
+        protocol: 'https',
+        hostname: 'new-web-xi-ten.vercel.app',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'accountooze.ai',
+        port: '',
+        pathname: '/**',
+      },
+
+
       {
         protocol: 'https',
         hostname: 'placehold.co',
