@@ -13,7 +13,7 @@
 //     title1: "Bookkeeping Service",
 //     title2: "For Real Estate Business",
 //     description: "Hire a Team of CPAs who specializes in Bookkeeping and Accounting of Real Estate Industry",
-//     image: "/Images/bro.avif", 
+//     image: "/Images/bro.avif",
 //   },
 //   {
 //     id: 2,
@@ -120,9 +120,6 @@
 //     </section>
 //   );
 // }
-
-
-
 
 // 'use client';
 
@@ -247,7 +244,6 @@
 //   );
 // }
 
-
 // 'use client';
 
 // import { useState, useEffect, useCallback, useRef } from 'react';
@@ -368,7 +364,6 @@
 //                       Explore Plans
 //                     </Link> */}
 
-
 //                   {/* Progress Indicators */}
 //                   <div className="flex items-center gap-4 pt-6 justify-center md:justify-start">
 //                     <div className="flex gap-2">
@@ -408,7 +403,7 @@
 //                       priority
 //                       sizes="(max-width: 768px) 100vw, 50vw"
 //                     />
-                    
+
 //                   </motion.div>
 //                 </AnimatePresence>
 //               </div>
@@ -421,40 +416,40 @@
 //   );
 // }
 
+"use client";
 
-
-
-'use client';
-
-import { useState, useEffect, useCallback, useRef } from 'react';
-import Image from 'next/image';
-import { buttonVariants } from '@/components/ui/button';
-import Link from 'next/link';
-import { cn } from '@/lib/utils';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect, useCallback, useRef } from "react";
+import Image from "next/image";
+import { buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { motion, AnimatePresence } from "framer-motion";
 
 const slides = [
   {
     id: 1,
     title1: "Bookkeeping Service",
     title2: "For Real Estate Business",
-    description: "Hire a Team of CPAs who specializes in Bookkeeping and Accounting of Real Estate Industry",
-    image: "/Images/bro.avif",
+    description:
+      "Hire a Team of CPAs who specializes in Bookkeeping and Accounting of Real Estate Industry",
+    image: "https://new-web-xi-ten.vercel.app/Images/bro.avif",
   },
   {
     id: 2,
     title1: "Commission & Rental Tracking",
     title2: "That Works as Hard as You Do",
-    description: "From closings to payouts, we manage your financials while you focus on selling more homes and closing more deals.",
-    image: "/Images/Outstaff.avif",
+    description:
+      "From closings to payouts, we manage your financials while you focus on selling more homes and closing more deals.",
+    image: "https://new-web-xi-ten.vercel.app/Images/Outstaff.avif",
   },
   {
     id: 3,
     title1: "Stay on Top of Every",
     title2: "Property's Profitability",
-    description: "We handle rental income, expenses, and P&L reports for each unit — so you can grow your portfolio with clarity.",
-    image: "/Images/Realestate.avif",
-  }
+    description:
+      "We handle rental income, expenses, and P&L reports for each unit — so you can grow your portfolio with clarity.",
+    image: "https://new-web-xi-ten.vercel.app/Images/Realestate.avif",
+  },
 ];
 
 export function ReminderSection() {
@@ -470,7 +465,7 @@ export function ReminderSection() {
   }, []);
 
   return (
-     <section
+    <section
       id="scroll-section"
       className="relative overflow-hidden bg-[#FCFCFD] pt-15 md:pt-18 pb-12 md:pb-19 flex items-start justify-center"
     >
@@ -481,7 +476,6 @@ export function ReminderSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center text-center md:text-left">
-
             {/* Content Side */}
             <div className="order-2 md:order-1 flex flex-col justify-center">
               <AnimatePresence mode="wait">
@@ -508,10 +502,10 @@ export function ReminderSection() {
 
                   <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center md:justify-start">
                     <Link
-                       href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0czVvey0mCJa39b594OhprJIIBTdV2h18U9Q3_xzSugo1qfMzTCrmN3rorBREzUeNYGlxnZ7Gq?gv=true"
+                      href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0czVvey0mCJa39b594OhprJIIBTdV2h18U9Q3_xzSugo1qfMzTCrmN3rorBREzUeNYGlxnZ7Gq?gv=true"
                       className={cn(
-                        buttonVariants({ size: 'lg' }),
-                        'bg-[#FF4500] hover:bg-[#E63E00] text-white px-8 py-7 text-lg font-bold rounded-xl shadow-lg transition-transform hover:-translate-y-1 active:scale-95'
+                        buttonVariants({ size: "lg" }),
+                        "bg-[#FF4500] hover:bg-[#E63E00] text-white px-8 py-7 text-lg font-bold rounded-xl shadow-lg transition-transform hover:-translate-y-1 active:scale-95",
                       )}
                     >
                       Book a Consultation
@@ -527,7 +521,9 @@ export function ReminderSection() {
                           onClick={() => setCurrentSlide(index)}
                           className={cn(
                             "h-2 rounded-full transition-all duration-300",
-                            currentSlide === index ? "w-10 bg-[#FF4500]" : "w-2 bg-slate-200"
+                            currentSlide === index
+                              ? "w-10 bg-[#FF4500]"
+                              : "w-2 bg-slate-200",
                           )}
                         />
                       ))}
@@ -560,7 +556,6 @@ export function ReminderSection() {
                 </AnimatePresence>
               </div>
             </div>
-
           </div>
         </div>
       </div>

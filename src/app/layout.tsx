@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/Images/logo.svg",
-        href: "/Images/logo.svg",
+        url: "https://new-web-xi-ten.vercel.app/Images/logo.svg",
+        href: "https://new-web-xi-ten.vercel.app/Images/logo.svg",
       },
     ],
   },

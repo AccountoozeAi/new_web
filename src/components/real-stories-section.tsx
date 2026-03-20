@@ -1,73 +1,98 @@
-import Image from 'next/image';
+import Image from "next/image";
 import {
   ShieldCheck,
   Zap,
   TrendingUp,
   Percent,
   BadgeIndianRupee,
-  Star
-} from 'lucide-react';
-import { cn } from '@/lib/utils';
+  Star,
+} from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const features = [
   {
-    title: 'CPAs on Team',
-    description: 'We have qualified CPAs on our Team who can help you with your books.',
-    icon: <ShieldCheck className="h-8 w-8 transition-all duration-500 group-hover:rotate-[360deg]" />,
+    title: "CPAs on Team",
+    description:
+      "We have qualified CPAs on our Team who can help you with your books.",
+    icon: (
+      <ShieldCheck className="h-8 w-8 transition-all duration-500 group-hover:rotate-[360deg]" />
+    ),
   },
   {
-    title: 'Hassle Free',
-    description: 'We offer super-responsive accounting services for small, medium and large scale businesses.',
-    icon: <Zap className="h-8 w-8 transition-all duration-500 group-hover:rotate-[360deg]" />,
-    highlight: 'Hassle Free'
+    title: "Hassle Free",
+    description:
+      "We offer super-responsive accounting services for small, medium and large scale businesses.",
+    icon: (
+      <Zap className="h-8 w-8 transition-all duration-500 group-hover:rotate-[360deg]" />
+    ),
+    highlight: "Hassle Free",
   },
   {
-    title: 'Better Business Decisions',
-    description: 'We will provide you with monthly management reports which will help you take better business decisions.',
-    icon: <TrendingUp className="h-8 w-8 transition-all duration-500 group-hover:rotate-[360deg]" />,
+    title: "Better Business Decisions",
+    description:
+      "We will provide you with monthly management reports which will help you take better business decisions.",
+    icon: (
+      <TrendingUp className="h-8 w-8 transition-all duration-500 group-hover:rotate-[360deg]" />
+    ),
   },
   {
-    title: 'Save Taxes',
-    description: 'We help you take the maximum deductions which will result in lowering your taxes.',
-    icon: <Percent className="h-8 w-8 transition-all duration-500 group-hover:rotate-[360deg]" />,
+    title: "Save Taxes",
+    description:
+      "We help you take the maximum deductions which will result in lowering your taxes.",
+    icon: (
+      <Percent className="h-8 w-8 transition-all duration-500 group-hover:rotate-[360deg]" />
+    ),
   },
   {
-    title: 'Lowest Price Guaranteed',
-    description: 'Our Pricing is the lowest without compromising on the quality.',
-    icon: <BadgeIndianRupee className="h-8 w-8 transition-all duration-500 group-hover:rotate-[360deg]" />,
+    title: "Lowest Price Guaranteed",
+    description:
+      "Our Pricing is the lowest without compromising on the quality.",
+    icon: (
+      <BadgeIndianRupee className="h-8 w-8 transition-all duration-500 group-hover:rotate-[360deg]" />
+    ),
   },
   {
-    title: 'Top-Rated & Trusted service',
-    description: 'We are having many happy clients with us who rated us top and trusted bookkeeping service providers.',
-    icon: <Star className="h-8 w-8 transition-all duration-500 group-hover:rotate-[360deg]" />,
+    title: "Top-Rated & Trusted service",
+    description:
+      "We are having many happy clients with us who rated us top and trusted bookkeeping service providers.",
+    icon: (
+      <Star className="h-8 w-8 transition-all duration-500 group-hover:rotate-[360deg]" />
+    ),
   },
 ];
 
 const softwareLogos = [
-  { name: 'MYOB', src: '/Images/QuickBooks.png' },
-  { name: 'Buildium', src: '/Images/new1.png' },
-  { name: 'Xero', src: '/Images/APP.png' },
-  { name: 'Yardi', src: '/Images/new2.png' },
-  { name: 'Quickbooks', src: '/Images/new4.png' },
-  { name: 'Wave', src: '/Images/new5.png' },
-   
-  
+  {
+    name: "MYOB",
+    src: "https://new-web-xi-ten.vercel.app/Images/QuickBooks.png",
+  },
+  {
+    name: "Buildium",
+    src: "https://new-web-xi-ten.vercel.app/Images/new1.png",
+  },
+  { name: "Xero", src: "https://new-web-xi-ten.vercel.app/Images/APP.png" },
+  { name: "Yardi", src: "https://new-web-xi-ten.vercel.app/Images/new2.png" },
+  {
+    name: "Quickbooks",
+    src: "https://new-web-xi-ten.vercel.app/Images/new4.png",
+  },
+  { name: "Wave", src: "https://new-web-xi-ten.vercel.app/Images/new5.png" },
 ];
 
 export function RealStoriesSection() {
   return (
     <section className="py-19 bg-white">
       <div className="container mx-auto max-w-6xl px-4">
-
         {/* --- Header --- */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-black mb-6">
             Why choose <span className="text-[#FF4500]">Accountooze?</span>
           </h2>
           <p className="text-gray-600 font-medium leading-relaxed">
-            At Accountooze, we don&apos;t just offer bookkeeping — we offer a smarter way to run your business.
-            From day one, you get access to handpicked professionals, transparent pricing,
-            and a system that works as an extension of your own business.
+            At Accountooze, we don&apos;t just offer bookkeeping — we offer a
+            smarter way to run your business. From day one, you get access to
+            handpicked professionals, transparent pricing, and a system that
+            works as an extension of your own business.
           </p>
         </div>
 
@@ -78,7 +103,7 @@ export function RealStoriesSection() {
               key={idx}
               className={cn(
                 "group p-8 rounded-[1.5rem] bg-[#F8F9FA] border border-transparent transition-all duration-500 ease-out",
-                "hover:bg-[#FF4500] hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(255,69,0,0.3)]"
+                "hover:bg-[#FF4500] hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(255,69,0,0.3)]",
               )}
             >
               <div className="flex items-start gap-4">
@@ -113,8 +138,14 @@ export function RealStoriesSection() {
 
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
             {softwareLogos.map((logo, i) => (
-              <div key={i} className="relative transition-all duration-500 grayscale hover:grayscale-0 hover:scale-110">
-                <div key={i} className="relative transition-all duration-500 grayscale hover:grayscale-0 hover:scale-110">
+              <div
+                key={i}
+                className="relative transition-all duration-500 grayscale hover:grayscale-0 hover:scale-110"
+              >
+                <div
+                  key={i}
+                  className="relative transition-all duration-500 grayscale hover:grayscale-0 hover:scale-110"
+                >
                   <Image
                     src={logo.src}
                     alt={logo.name}
@@ -127,7 +158,6 @@ export function RealStoriesSection() {
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );

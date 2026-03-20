@@ -6,16 +6,13 @@ import { cn } from "@/lib/utils";
 export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/40 backdrop-blur-md">
-
       <div className="container flex h-20 items-center justify-between">
-
         {/* LEFT SIDE (LOGO + BRAND) */}
         <Link href="/" className="flex items-center gap-3">
-
           {/* Logo Image */}
           <div className="relative h-10 w-10">
             <Image
-              src="/Images/logo.svg"
+              src="https://new-web-xi-ten.vercel.app/Images/logo.svg"
               alt="Accountooz Logo"
               fill
               className="object-contain"
@@ -26,7 +23,6 @@ export function Header() {
           <span className="text-xl font-bold bg-gradient-to-r bg-clip-text">
             Accountooze
           </span>
-
         </Link>
         <div className="hidden md:block text-sm lg:text-base font-semibold text-primary/90 bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text">
           Stop Drowning in Accounting, Bookkeeping & Tax
@@ -48,7 +44,9 @@ export function Header() {
           </Link>
 
         </div> */}
-        <div className="flex items-center shrink-0"> {/* shrink-0 se button pichkega nahi */}
+        <div className="flex items-center shrink-0">
+          {" "}
+          {/* shrink-0 se button pichkega nahi */}
           <Link
             href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0czVvey0mCJa39b594OhprJIIBTdV2h18U9Q3_xzSugo1qfMzTCrmN3rorBREzUeNYGlxnZ7Gq?gv=true"
             target="_blank"
@@ -56,10 +54,9 @@ export function Header() {
             className={cn(
               buttonVariants(),
 
-              "px-3 py-2 md:px-6 md:py-2 text-[12px] md:text-sm font-semibold shadow-md hover:shadow-xl transition hover:scale-105 whitespace-nowrap"
+              "px-3 py-2 md:px-6 md:py-2 text-[12px] md:text-sm font-semibold shadow-md hover:shadow-xl transition hover:scale-105 whitespace-nowrap",
             )}
           >
-
             Book a Free Consultation
           </Link>
         </div>
