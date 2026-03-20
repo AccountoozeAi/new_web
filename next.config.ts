@@ -1,6 +1,8 @@
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
+
+  assetPrefix: 'https://new-web-xi-ten.vercel.app',
   /* config options here */
   typescript: {
     ignoreBuildErrors: true,
